@@ -1,0 +1,19 @@
+.featured_item .col-medium .col-inner {
+    border: 1px solid #ececec;
+    height: 100%;
+}
+.featured_item .col-medium .col-inner .box-text {
+	    padding: 10px;
+	}
+.featured_item .col-medium .col-inner .box-text .cat-label span {
+    margin-right: 10px;
+    word-break: break-word;
+    display: block;
+    margin: 0 0 5px 0;
+    line-height: 17px;
+    color: #333;
+}
+.featured_item .col-medium .col-inner .box-text .cat-label span i.fa {
+	margin-right: 5px;
+	color: #333;
+}

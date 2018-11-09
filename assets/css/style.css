@@ -1,0 +1,185 @@
+/**/
+
+body:not(.home) .box-uxbp {
+    min-height: 270px;
+    border: 1px solid #ccc;
+}
+body:not(.home) .box-uxbp .box-image {}
+body:not(.home) .box-uxbp .box-text {
+    padding: 15px;
+}
+
+.order-col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+.order-col .order-col-1 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+.order-col .order-col-2 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+
+/*Title*/
+.uxbp-title {}
+.uxbp-title b {}
+.uxbp-title span {}
+.uxbp-title ul.nav.category {
+    position: absolute;
+    right: 0;
+    width: auto;
+}
+.uxbp-title ul.nav.category > li {
+    margin: 0 10px;
+}
+.uxbp-title ul.nav.category > li > a {
+    margin: 0;
+    padding: 0;
+}
+
+/*Posts*/
+.uxbp-post {}
+.uxbp-post .col-uxbp {}
+.uxbp-post .col-uxbp a:hover .post-title {
+    color: var(--primary-color);
+}
+
+/*FEATURED*/
+.uxbp-post .box-featured {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+.uxbp-post .box-featured .box-image {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+.uxbp-post .box-featured .box-text {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    padding-left: 85px;
+}
+.uxbp-post .box-featured p.featured-divider {
+    margin: 0;
+    padding: 0;
+}
+.uxbp-post .box-featured p.featured-divider span {
+    text-transform: uppercase;
+    border-top: 2px solid rgba(0, 0, 0, 0.84);
+    padding-top: 5px;
+}
+
+/*VERTICAL*/
+.uxbp-post .box-vertical {
+    -ms-box-orient: horizontal;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 20px;
+}
+.uxbp-post .box-vertical .style_order-1 {
+    order: 1;
+}
+.uxbp-post .box-vertical .style_order-2 {
+    order: 2;
+}
+.uxbp-post .box-vertical .box-text {
+    padding: 10px 20px;
+}
+.uxbp-post .box-vertical .box-text.style_order-1 {
+    padding-left: 0;
+}
+.uxbp-post .box-vertical .box-text:not(.style_order-1) {
+    padding-right: 0;
+}
+.uxbp-post .box-vertical .box-image {
+    padding: 0;
+}
+
+/*POPULAR*/
+.uxbp-post .col-uxbp {
+    counter-increment: popular;
+}
+.uxbp-post .col-uxbp .box-popular {
+    padding-left: 60px;
+    position: relative;
+}
+.uxbp-post .col-uxbp .box-popular:before {
+    content: "0" counter(popular);
+    position: absolute;
+    top: -12px;
+    left: 0;
+    font-size: 40px;
+    color: #ddd;
+}
+
+/*LẠC TRÔI*/
+.uxbp-post.lactroi-on {}
+.uxbp-post.lactroi-on .row {
+    top: 0;
+}
+
+/*CAT & DATE*/
+.uxbp-post p.cat-label {
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+    border-left: 3px solid rgba(228, 49, 55, 0.5);
+    padding-left: 10px;
+    line-height: 12px;
+}
+/*.uxbp-post p.cat-label:hover {
+    border-left: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}*/
+.uxbp-post p.cat-label span {
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.uxbp-post p.cat-label span.cat:after {}
+.uxbp-post p.cat-label span.date {}
+.uxbp-post p.cat-label span.date i.fa {}
+
+@media only screen and (max-width: 48em) {
+
+    body:not(.home) .box-uxbp {
+        min-height: unset;
+    }
+    .order-col-mb {
+        display: -webkit-box !important;
+        display: -moz-box !important;
+        display: box !important;
+        -webkit-box-orient: vertical !important;
+        -moz-box-orient: vertical !important;
+        box-orient: vertical !important;
+    }
+    .order-col-mb .order-col-mb-1 {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+    }
+    .order-col-mb .order-col-mb-2 {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+    }
+
+    /*Posts*/
+    .uxbp-post .box-featured .box-image {}
+    .uxbp-post .box-featured .box-text {
+        padding-left: 35px;
+    }
+
+}
